@@ -39,5 +39,5 @@ docker run -dit --name titan0 --restart always -v ~/.titanedge0:/root/.titanedge
 sleep 10
 
 # Thực hiện hành động cho từng container
-docker exec -it titan$i /bin/bash -c "titan-edge bind --hash=$hash https://api-test1.container1.titannet.io/api/v2/device/binding"
+docker exec -it titan0 /bin/bash -c "titan-edge bind --hash=$hash https://api-test1.container1.titannet.io/api/v2/device/binding"
 
