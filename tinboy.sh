@@ -33,7 +33,7 @@ read hash
 mkdir -p ~/.titanedge0
 
 # Bước 10: Chạy container 0 và cấu hình tự động khởi động lại
-docker run -dit --name titan0 --restart always -v ~/.titanedge0:/root/.titanedge nezha123/titan-edge
+docker run --privileged -dit --name titan0 --restart always -v ~/.titanedge0:/root/.titanedge nezha123/titan-edge
 
 # Chờ một khoảng thời gian cho container khởi động
 sleep 10
